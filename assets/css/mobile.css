@@ -1,0 +1,231 @@
+/*Change The Display to mobile*/
+@media (max-width: 991px) {
+
+    header,
+    header.sticky {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+
+    .menu {
+        position: fixed;
+        top: 90px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: rgb(0, 78, 180);
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    header ul li a {
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url(../../images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.active {
+        background: url(../../images/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+
+
+    header.sticky .toggle {
+        filter: invert(1);
+    }
+
+    section {
+        padding: 100px 50px;
+    }
+
+    .image-gallery {
+        grid-template-areas:
+            'img_1 img_1 img_2 img_2'
+            'img_1 img_1 img_3 img_3'
+            'img_4 img_4 img_5 img_5'
+            'img_6 img_7 img_7 img_7'
+            'img_8 img_8 img_8 img_8';
+    }
+
+    .image-gallery a {
+        height: 20rem;
+    }
+
+    .img_1 {
+        min-height: 41.5rem;
+    }
+
+    .img_6 {
+        min-height: 20rem;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    header,
+    header.sticky {
+        padding: 20px 20px;
+    }
+
+    .banner-text {
+        padding-top: 10vh;
+    }
+
+    .banner-text h1 {
+        font-size: 44px;
+        justify-content: center;
+    }
+
+    .banner-btn a {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .about .content h2 {
+        font-weight: 800;
+        color: #111;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .slide img {
+        width: 10vw;
+        height: 4vw;
+    }
+
+    .logo-slider .item {
+        padding: 10px;
+        box-shadow: 0 1px 1px #cacaca;
+    }
+
+    #slide .title-text h1 {
+        font-size: 40px;
+    }
+
+    .founder {
+        margin: 100px auto 0;
+        width: 100%;
+        height: 500px;
+        /* perspective: 1000px; */
+    }
+
+    .pp1 {
+        display: none;
+    }
+
+
+    #founder .title-text h1 {
+        font-size: 40px;
+    }
+
+    .card__body h3 {
+        display: none;
+    }
+
+    .card__body p {
+        display: none;
+    }
+
+    .card__face--front h2 {
+        color: #FFF;
+        font-size: 27px;
+    }
+
+    .social-links .fb {
+        height: 35px;
+        width: 35px;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .social-links .ig {
+        height: 35px;
+        width: 35px;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .social-links .tw {
+        height: 35px;
+        width: 35px;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .social-links .lk {
+        height: 35px;
+        width: 35px;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .image-gallery {
+        grid-template-areas:
+            'img_1 img_1 img_1 img_1'
+            'img_2 img_2 img_2 img_2'
+            'img_3 img_3 img_3 img_3'
+            'img_4 img_4 img_4 img_4'
+            'img_5 img_5 img_5 img_5'
+            'img_6 img_6 img_6 img_6'
+            'img_7 img_7 img_7 img_7'
+            'img_8 img_8 img_8 img_8';
+    }
+
+    .image-gallery a,
+    .img_1,
+    .img_6 {
+        min-height: 30rem;
+        height: 30rem;
+    }
+
+    .footer-left,
+    .footer-right {
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+
+    .our-partners-inner a {
+        width: 100%;
+    }
+
+    .footer-row {
+        width: 100%;
+        right: 5px;
+    }
+
+    .footer-right p {
+        font-size: 11px;
+    }
+
+    .copyright p {
+        font-size: 12px;
+    }
+
+}
